@@ -44,6 +44,6 @@ class Program
             }
         }
 
-        Console.WriteLine("Текст сохранён в TextOnly.txt"); // выводим сообщение в консоль
+        Console.WriteLine("Текст сохранён в TextOnly.txt"); // выводим сообщение в консоль что все
     }
 }
