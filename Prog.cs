@@ -20,8 +20,10 @@ class Program
 
         // разделяем ссылки, которые находятся на разных строках
         html = Regex.Replace(html, @"</a>[ \t]*\r?\n[ \t]*(?=<a\b)", "</a>\n", RegexOptions.IgnoreCase);
+        
         // заменяем теги br на перенос строки
         html = Regex.Replace(html, @"<br\b[^>]*>", "\n", RegexOptions.IgnoreCase);
+        
         // добавляем переносы после блочных элементов
         html = Regex.Replace(html, @"</(?:title|p|div|h[1-6]|li|tr|section|article|header|footer|blockquote)\s*>", "\n", RegexOptions.IgnoreCase);
         
